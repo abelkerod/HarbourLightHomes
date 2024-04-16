@@ -1,5 +1,7 @@
 ---
 import Navbar from "./Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html lang="en">
@@ -9,9 +11,13 @@ import Navbar from "./Navbar.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
+    <ViewTransitions />
   </head>
-  <Navbar />
-  <body class="bg-gray-100">
-    <slot />
+  <body class="flex flex-col min-h-screen justify-between">
+    <Navbar />
+    <div class="flex-grow">
+      <slot />
+    </div>
+    <Footer />
   </body>
 </html>
