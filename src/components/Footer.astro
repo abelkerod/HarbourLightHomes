@@ -1,46 +1,61 @@
 ---
-import logo from "../images/logo.png"
-import { Icon } from 'astro-icon/components'
+import logo from "../images/logo.png";
+import { Icon } from "astro-icon/components";
 ---
 
-<div class="w-full bg-gun-metal text-white ">
+<div class="w-full bg-gun-metal text-white">
   <div class="px-8 my-8 py-4 flex justify-between">
-<!-- TODO: Update all the values and links -->
+    <!--  TODO: Update all the values and links -->
     <div class="space-y-2">
       <h3 class="text-2xl">Get In Touch</h3>
-      <p class="w-1/2"> For general enquiries please use the contact details below and a member of our team will get back to you as soon as possible.</p>
+      <p class="w-1/2">
+        For general enquiries please use the contact details below and a member
+        of our team will get back to you as soon as possible.
+      </p>
       <div class="flex space-x-3 pt-4">
-      <a href="#"><Icon name="line-md:facebook" /></a>
-      <a href="#"><Icon name="line-md:twitter-x" /></a>
-      <a href="#"><Icon name="line-md:instagram" /></a>
+        <a href="#"><Icon name="line-md:facebook" /></a>
+        <a href="#"><Icon name="line-md:twitter-x" /></a>
+        <a href="#"><Icon name="line-md:instagram" /></a>
       </div>
     </div>
 
     <div class="flex flex-col space-y-2">
-    <div class="flex space-x-8" >
-<!-- TODO: Update all the values and links of the 3 contacts-->
-      <div>
-       <h4 class="text-lg">For Contact</h4> 
-        <a href="#" class="flex items-center "><Icon class="mr-2" name="solar:letter-bold-duotone" />contact@harbourlighthomes.com</a>
+      <div class="flex space-x-8">
+        <!--  TODO: Update all the values and links of the 3 contacts-->
+        <div>
+          <h4 class="text-lg">For Contact</h4>
+          <a href="#" class="flex items-center"
+            ><Icon
+              class="mr-2"
+              name="solar:letter-bold-duotone"
+            />contact@harbourlighthomes.com</a
+          >
+        </div>
+        <div>
+          <h4 class="text-lg">For Referal</h4>
+          <a href="#"></a>
+          <a href="#" class="flex items-center"
+            ><Icon
+              class="mr-2"
+              name="solar:letter-bold-duotone"
+            />referal@harbourlighthomes.com</a
+          >
+        </div>
       </div>
       <div>
-       <h4 class="text-lg">For Referal</h4> 
-        <a href="#"></a>
-        <a href="#" class="flex items-center "><Icon class="mr-2" name="solar:letter-bold-duotone" />referal@harbourlighthomes.com</a>
+        <h4 class="text-lg">Address</h4>
+        <a href="#" class="flex items-center"
+          ><Icon class="mr-2" name="solar:map-point-bold-duotone" />ABC
+          Building, 3rd Floor. 123 Main St, Denver, Colorado</a
+        >
       </div>
     </div>
-      <div>
-       <h4 class="text-lg">Address</h4> 
-        <a href="#" class="flex items-center"><Icon class="mr-2" name="solar:map-point-bold-duotone" />ABC Building, 3rd Floor. 123 Main St, Denver, Colorado</a>
-      </div>
-    </div>
-
   </div>
 
-  <hr>
+  <hr />
 
-  <div class="px-8 py-4 flex justify-between items-center ">
-    <div class="space-y-2" >
+  <div class="px-8 py-4 flex justify-between items-center">
+    <div class="space-y-2">
       <div class="flex items-center space-x-2">
         <img src={logo.src} />
         <h2>Harbour Light Homes</h2>
@@ -51,14 +66,12 @@ import { Icon } from 'astro-icon/components'
         <span>All Rights Reserved</span>
       </p>
     </div>
-<!--TODO: Make the above link dynamic-->
-    <a href="#" class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+    <!--  TODO: Make the above link dynamic-->
+    <a
+      href="#"
+      class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+    >
       Developed By, Kerod
-</a>
+    </a>
   </div>
 </div>
-
-<script>
-<!--TODO: Make the 2024 dynamic even after buiding -->
-  document.getElementById("copyRightYear").textContent = "2024.";
-</script>
