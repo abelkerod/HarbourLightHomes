@@ -55,6 +55,9 @@ import { Icon } from "astro-icon/components";
   <hr />
 
   <div class="px-8 py-4 flex justify-between items-center">
+    <!-- <script> -->
+    <!--   const buttons = document.querySelectorAll(""); -->
+    <!-- </script> -->
     <div class="space-y-2">
       <div class="flex items-center space-x-2">
         <img src={logo.src} />
@@ -62,7 +65,7 @@ import { Icon } from "astro-icon/components";
       </div>
       <p>
         <span>©</span>
-        <span id="copyRightYear"></span>
+        <span id="copyright-year"></span>
         <span>All Rights Reserved</span>
       </p>
     </div>
@@ -75,3 +78,10 @@ import { Icon } from "astro-icon/components";
     </a>
   </div>
 </div>
+
+<!-- Set Dynamic Copyright Year-->
+<script>
+  const currentYear = new Date().getFullYear();
+  const buttons = document.getElementById("copyright-year");
+  buttons!.textContent = `${currentYear.toString()}.`;
+</script>
