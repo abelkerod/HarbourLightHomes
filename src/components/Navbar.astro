@@ -1,0 +1,23 @@
+---
+import logo from "../images/logo.png";
+---
+
+<nav class="flex justify-between items-center mx-auto w-[80%] mt-7">
+  <div class="flex items-center space-x-2">
+    <img src={logo.src} />
+    <h2>Harbour Light Homes</h2>
+  </div>
+  <div class="flex space-x-8">
+    <a class={Astro.url.pathname === "/" ? "font-bold" : ""} href="/">Home</a>
+    <a
+      class={Astro.url.pathname === "/service" ? "font-bold" : ""}
+      href="/service">Service</a
+    >
+  </div>
+  <div class="flex space-x-2">
+    <p>(555) 555-1234</p>
+    <span>|</span>
+    <!--Link the get in touch to the contact us section-->
+    <a href="#">Get in touch</a>
+  </div>
+</nav>
