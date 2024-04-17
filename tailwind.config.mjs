@@ -9,7 +9,7 @@ export default {
         'powder-blue': '#A6C5E4',
       },
       backgroundImage: {
-        'pattern': "url('./public/images/backgroundPattern.png')"
+        'pattern': "url('/images/backgroundPattern.png')"
       },
     },
   },
