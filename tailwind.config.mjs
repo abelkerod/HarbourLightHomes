@@ -4,8 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'gun-metal': '#253237'
-      }
+        'gun-metal': '#253237',
+        'gun-metal-light': '#5C6B73',
+        'powder-blue': '#A6C5E4',
+      },
+      backgroundImage: {
+        'pattern': "url('./public/images/backgroundPattern.png')"
+      },
     },
   },
   plugins: [],
