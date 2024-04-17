@@ -1,0 +1,41 @@
+---
+import Container from "./Container.astro";
+import { Image } from "astro:assets";
+import team1 from "../images/team1.png";
+---
+
+<Container>
+  <div class="flex flex-col items-center space-y-5">
+    <h3 class="text-3xl font-bold">Meet the Team...</h3>
+    <p
+      class="md:w-2/3 px-4 text-xl text-gun-metal-light text-justify md:text-center"
+    >
+      Meet the faces behind the company – A group of passionate individuals with
+      diverse skills and a shared commitment to excellence.
+    </p>
+    <div
+      class="flex flex-col md:flex-row w-full items-center md:justify-between space-y-5 text-gun-metal"
+    >
+      <div>
+        <Image alt="Team member" src={team1} />
+        <h4 class="font-bold text-xl mt-3">Abebe Kebede</h4>
+        <p>Position #</p>
+      </div>
+      <div>
+        <Image alt="Team member" src={team1} />
+        <h4 class="font-bold text-xl mt-3">Abebe Kebede</h4>
+        <p>Position #</p>
+      </div>
+      <div>
+        <Image alt="Team member" src={team1} />
+        <h4 class="font-bold text-xl mt-3">Abebe Kebede</h4>
+        <p>Position #</p>
+      </div>
+      <div>
+        <Image alt="Team member" src={team1} />
+        <h4 class="font-bold text-xl mt-3">Abebe Kebede</h4>
+        <p>Position #</p>
+      </div>
+    </div>
+  </div>
+</Container>
