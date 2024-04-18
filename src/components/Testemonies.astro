@@ -1,0 +1,57 @@
+---
+import Carousel from "../components/Carousel.astro";
+import Container from "./Container.astro";
+const testemonies = [
+  {
+    content:
+      "“The staff here always go the extra mile to make sure I'm feeling supported, respected and understood. They plan loads of fun activities and events that not only get us up and moving, but also help us learn new things and create lasting friendships.  Thanks so much to everyone at the home for helping me feel like I belong”",
+    writer: "Bisrat Alemu",
+  },
+  {
+    content:
+      "“The staff here always go the extra mile to make sure I'm feeling supported, respected and understood. They plan loads of fun activities and events that not only get us up and moving, but also help us learn new things and create lasting friendships.  Thanks so much to everyone at the home for helping me feel like I belong”",
+    writer: "Bisrat Alemu",
+  },
+  {
+    content:
+      "“The staff here always go the extra mile to make sure I'm feeling supported, respected and understood. They plan loads of fun activities and events that not only get us up and moving, but also help us learn new things and create lasting friendships.  Thanks so much to everyone at the home for helping me feel like I belong”",
+    writer: "Bisrat Alemu",
+  },
+  {
+    content:
+      "“The staff here always go the extra mile to make sure I'm feeling supported, respected and understood. They plan loads of fun activities and events that not only get us up and moving, but also help us learn new things and create lasting friendships.  Thanks so much to everyone at the home for helping me feel like I belong”",
+    writer: "Bisrat Alemu",
+  },
+  {
+    content:
+      "“The staff here always go the extra mile to make sure I'm feeling supported, respected and understood. They plan loads of fun activities and events that not only get us up and moving, but also help us learn new things and create lasting friendships.  Thanks so much to everyone at the home for helping me feel like I belong”",
+    writer: "Bisrat Alemu",
+  },
+  {
+    content:
+      "“The staff here always go the extra mile to make sure I'm feeling supported, respected and understood. They plan loads of fun activities and events that not only get us up and moving, but also help us learn new things and create lasting friendships.  Thanks so much to everyone at the home for helping me feel like I belong”",
+    writer: "Bisrat Alemu",
+  },
+];
+---
+
+<Container>
+  <Carousel>
+    {
+      testemonies.map((testemony) => (
+        <div
+          class="duration-700 ease-in-out flex flex-col items-center space-y-5 justify-center "
+          data-carousel-item
+        >
+          <p class="md:w-2/3 px-4 text-xl text-gun-metal-light text-justify md:text-center">
+            {testemony.content}
+          </p>
+          <h3 />
+          <h3 class="text-2xl text-gun-metal-light font-bold">
+            {testemony.writer}
+          </h3>
+        </div>
+      ))
+    }
+  </Carousel>
+</Container>
