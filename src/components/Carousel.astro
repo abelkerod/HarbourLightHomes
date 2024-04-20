@@ -2,7 +2,7 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
+<div id="default-carousel" class="relative" data-carousel="slide">
   <!-- Carousel wrapper -->
   <div class="flex justify-center">
     <h3 class="text-3xl font-bold">What’s people opinion of us?</h3>
@@ -12,7 +12,7 @@ import { Icon } from "astro-icon/components";
   </div>
   <!-- Slider indicators -->
   <div
-    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+    class="hidden md:flex absolute z-30 -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
   >
     {
       [1, 2, 3, 4, 5].map((index) => (
@@ -29,17 +29,17 @@ import { Icon } from "astro-icon/components";
   <!-- Slider controls -->
   <button
     type="button"
-    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    class="flex absolute top-0 start-0 z-30 items-end md:items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
     data-carousel-prev
   >
     <Icon
       name="solar:round-arrow-left-linear"
-      class="text-[2.5rem] text-powder-blue hover:text-gun-metal"
+      class="text-[2.5rem] relative text-powder-blue hover:text-gun-metal"
     />
   </button>
   <button
     type="button"
-    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    class="flex absolute top-0 end-0 z-30 items-end md:items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
     data-carousel-next
   >
     <Icon
