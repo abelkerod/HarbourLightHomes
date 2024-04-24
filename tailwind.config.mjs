@@ -6,7 +6,7 @@ export default {
       colors: {
         'gun-metal': '#253237',
         'gun-metal-light': '#5C6B73',
-        'powder-blue': '#A6C5E4',
+        'powder-blue': '#0085C6',
       },
       backgroundImage: {
         'pattern': "url('/images/backgroundPattern.png')"
