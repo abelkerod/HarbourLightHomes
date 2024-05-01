@@ -1,8 +1,16 @@
 ---
-import Navbar from "./Navbar.astro";
-import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
 ---
+
+<script>
+  import { initFlowbite } from "flowbite";
+
+  document.addEventListener("astro:after-swap", () => {
+    initFlowbite();
+  });
+</script>
 
 <html lang="en">
   <head>
@@ -16,7 +24,9 @@ import { ViewTransitions } from "astro:transitions";
   <body
     class="flex flex-col min-h-screen justify-between bg-white text-metal-gun"
   >
-    <Navbar />
+    <div class="pb-28">
+      <Navbar />
+    </div>
     <div class="flex-grow">
       <slot />
     </div>

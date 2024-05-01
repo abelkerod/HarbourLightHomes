@@ -4,50 +4,90 @@ import { Image } from "astro:assets";
 ---
 
 <nav
-  class="flex justify-between items-center mx-auto w-full md:w-[80%] mt-7 px-4 pb-14"
+  class="bg-white fixed w-full z-20 top-0 start-0 border-b border-powder-blue"
 >
-  <div class="flex items-center space-x-2">
-    <Image alt="logo" src={logo} class="size-16" />
-    <h2>Harbour Light</h2>
-  </div>
-  <div class="flex space-x-4 md:space-x-8">
-    <a
-      class={Astro.url.pathname === "/" ? "font-bold text-powder-blue" : ""}
-      href="/">Home</a
+  <div
+    class="max-w-[80%] flex flex-wrap items-center justify-between mx-auto py-1 mt-1"
+  >
+    <!-- Left Logo-->
+    <a href="/" class="flex items-center">
+      <div class="flex items-center space-x-2">
+        <Image alt="logo" src={logo} class="size-16" />
+        <h2 class="text-powder-blue font-bold">Harbour Light</h2>
+      </div>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    <!-- Right CTA-->
+      <div class="hidden md:flex space-x-2">
+        <p>(555) 555-1234</p>
+        <span>|</span>
+        <a href="#contact">Get in touch</a>
+      </div>
+
+    <!-- Mobile view burger menu -->
+      <button
+        data-collapse-toggle="navbar-sticky"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"></path>
+        </svg>
+      </button>
+    </div>
+
+
+    <!-- Navigation menus -->
+    <div
+      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+      id="navbar-sticky"
     >
-    <a
-      class={Astro.url.pathname === "/services"
-        ? "font-bold text-powder-blue "
-        : ""}
-      href="/services">Service</a
-    >
-    <a
-      class={Astro.url.pathname === "/referrals"
-        ? "font-bold text-powder-blue "
-        : ""}
-      href="/referrals">Referrals</a
-    >
-    <a
-      class={Astro.url.pathname === "/careers"
-        ? "font-bold text-powder-blue "
-        : ""}
-      href="/careers">Careers</a
-    >
-  </div>
-  <div class="hidden md:flex space-x-2">
-    <p>(555) 555-1234</p>
-    <span>|</span>
-    <a href="#contact">Get in touch</a>
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+      >
+        <li>
+          <a
+            href="/"
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname==='/'? 'text-powder-blue font-semibold':''}`}
+            aria-current="page">Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/services"
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname==='/services'? 'text-powder-blue font-semibold':''}`}
+            aria-current="page">Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="/referrals"
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname==='/referrals'? 'text-powder-blue font-semibold':''}`}
+            aria-current="page">Referrals</a
+          >
+        </li>
+        <li>
+          <a
+            href="/careers"
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname==='/careers'? 'text-powder-blue font-semibold':''}`}
+            aria-current="page">Careers</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
-
-<!-- Smooth scroll to contact us section-->
-<script>
-  const link = document.querySelector('a[href="#contact"]');
-  link?.addEventListener("click", (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute("href");
-    const targetSection = document.getElementById(`${targetId!.split("#")[1]}`);
-    targetSection!.scrollIntoView({ behavior: "smooth" });
-  });
-</script>
