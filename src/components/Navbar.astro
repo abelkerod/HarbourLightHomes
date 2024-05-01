@@ -4,7 +4,7 @@ import { Image } from "astro:assets";
 ---
 
 <nav
-  class="bg-white fixed w-full z-20 top-0 start-0 border-b border-powder-blue"
+  class="bg-white md:fixed w-full z-20 top-0 start-0 border-b border-powder-blue"
 >
   <div
     class="max-w-[80%] flex flex-wrap items-center justify-between mx-auto py-1 mt-1"
@@ -17,18 +17,18 @@ import { Image } from "astro:assets";
       </div>
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-    <!-- Right CTA-->
+      <!-- Right CTA-->
       <div class="hidden md:flex space-x-2">
         <p>(555) 555-1234</p>
         <span>|</span>
         <a href="#contact">Get in touch</a>
       </div>
 
-    <!-- Mobile view burger menu -->
+      <!-- Mobile view burger menu -->
       <button
         data-collapse-toggle="navbar-sticky"
         type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
         aria-controls="navbar-sticky"
         aria-expanded="false"
       >
@@ -50,7 +50,6 @@ import { Image } from "astro:assets";
       </button>
     </div>
 
-
     <!-- Navigation menus -->
     <div
       class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
@@ -62,28 +61,28 @@ import { Image } from "astro:assets";
         <li>
           <a
             href="/"
-            class={`block rounded p-3 md:p-0 ${Astro.url.pathname==='/'? 'text-powder-blue font-semibold':''}`}
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/" ? "text-powder-blue font-semibold" : ""}`}
             aria-current="page">Home</a
           >
         </li>
         <li>
           <a
             href="/services"
-            class={`block rounded p-3 md:p-0 ${Astro.url.pathname==='/services'? 'text-powder-blue font-semibold':''}`}
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/services" ? "text-powder-blue font-semibold" : ""}`}
             aria-current="page">Services</a
           >
         </li>
         <li>
           <a
             href="/referrals"
-            class={`block rounded p-3 md:p-0 ${Astro.url.pathname==='/referrals'? 'text-powder-blue font-semibold':''}`}
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/referrals" ? "text-powder-blue font-semibold" : ""}`}
             aria-current="page">Referrals</a
           >
         </li>
         <li>
           <a
             href="/careers"
-            class={`block rounded p-3 md:p-0 ${Astro.url.pathname==='/careers'? 'text-powder-blue font-semibold':''}`}
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/careers" ? "text-powder-blue font-semibold" : ""}`}
             aria-current="page">Careers</a
           >
         </li>
