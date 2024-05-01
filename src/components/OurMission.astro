@@ -7,19 +7,14 @@ import { Image } from "astro:assets";
 
 <div class="bg-pattern">
   <Container>
-    <div class="md:flex space-y-4">
-      <div class="space-y-4 md:flex md:flex-col md:items-center">
-        <h3
-          class="w-fit text-xl px-4 py-1 font-bold underline underline-offset-2 decoration-powder-blue"
-        >
-          Our Mission
-        </h3>
-        <h3 class="text-3xl font-bold text-powder-blue">
-          At Harbour Light Homes, our mission is clear: to empower young voices,
+    <div class="md:grid grid-cols-2">
+      <div class="flex flex-col items-center space-y-3">
+        <h3 class="text-3xl font-bold text-powder-blue md:w-3/4">
+          At Harbour Light, our mission is clear: to empower young voices,
           foster secure spaces, and nurture futures filled with confidence and
           opportunity. Our History
         </h3>
-        <p class="text-gun-metal-light md:text-xl">
+        <p class="text-gun-metal-light md:text-xl text-justify md:w-3/4">
           We strive to create environments where young people feel safe and
           secure in both their living spaces and broader surroundings. Their
           voices are not only respected but also heard and advocated for,
@@ -27,9 +22,14 @@ import { Image } from "astro:assets";
         </p>
         <Image alt="Happy Teenagers" src={ourHistoryImage1} />
       </div>
-      <div class="space-y-4 md:flex md:flex-col md:items-center">
-        <Image alt="Happy Teenagers" src={ourHistoryImage2} />
-        <p class="text-gun-metal-light md:w-3/5 md:px-8 md:text-xl">
+      <div class="flex flex-col items-center space-y-3">
+        <Image
+          class="order-last md:order-none"
+          alt="Happy Teenagers"
+          src={ourHistoryImage2}
+        />
+
+        <p class="text-gun-metal-light md:text-xl text-justify md:w-3/4">
           We are committed to understanding their unique needs, working together
           effectively to meet them with skill and empathy. Providing
           comfortable, well-maintained, and stable accommodation, we offer
@@ -39,7 +39,7 @@ import { Image } from "astro:assets";
           independent adult living. As a result, they feel positive about their
           future and the opportunities that lie ahead.
         </p>
-        <p class="text-gun-metal-light md:w-3/5 md:px-8 md:text-xl">
+        <p class="text-gun-metal-light md:text-xl text-justify md:w-3/4">
           Within our supportive community, young people cultivate strong,
           trusting relationships and develop the skills needed for independent
           adult living. As a result, they feel positive about their future and

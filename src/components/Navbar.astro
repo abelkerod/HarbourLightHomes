@@ -11,9 +11,14 @@ import { Image } from "astro:assets";
     <h2>Harbour Light</h2>
   </div>
   <div class="flex space-x-4 md:space-x-8">
-    <a class={Astro.url.pathname === "/" ? "font-bold" : ""} href="/">Home</a>
     <a
-      class={Astro.url.pathname === "/service" ? "font-bold" : ""}
+      class={Astro.url.pathname === "/" ? "font-bold text-powder-blue" : ""}
+      href="/">Home</a
+    >
+    <a
+      class={Astro.url.pathname === "/service"
+        ? "font-bold text-powder-blue "
+        : ""}
       href="/service">Service</a
     >
   </div>
