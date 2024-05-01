@@ -16,10 +16,22 @@ import { Image } from "astro:assets";
       href="/">Home</a
     >
     <a
-      class={Astro.url.pathname === "/service"
+      class={Astro.url.pathname === "/services"
         ? "font-bold text-powder-blue "
         : ""}
-      href="/service">Service</a
+      href="/services">Service</a
+    >
+    <a
+      class={Astro.url.pathname === "/referrals"
+        ? "font-bold text-powder-blue "
+        : ""}
+      href="/referrals">Referrals</a
+    >
+    <a
+      class={Astro.url.pathname === "/careers"
+        ? "font-bold text-powder-blue "
+        : ""}
+      href="/careers">Careers</a
     >
   </div>
   <div class="hidden md:flex space-x-2">

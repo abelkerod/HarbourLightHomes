@@ -13,7 +13,7 @@ import ContactUs from "../components/ContactUs.astro";
         <Image alt="logo" src={logo} class="size-16" loading={"lazy"} />
         <h2>Harbour Light</h2>
       </div>
-      <p>©<span id="copyright-year"></span>All Rights Reserved</p>
+      <p>©{new Date().getFullYear()}. All Rights Reserved</p>
     </div>
     <a
       href="#"
@@ -23,10 +23,3 @@ import ContactUs from "../components/ContactUs.astro";
     </a>
   </div>
 </div>
-
-<!-- Set Dynamic Copyright Year-->
-<script>
-  const currentYear = new Date().getFullYear();
-  const buttons = document.getElementById("copyright-year");
-  buttons!.textContent = `${currentYear.toString()}.`;
-</script>
