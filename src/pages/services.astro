@@ -1,61 +1,19 @@
 ---
 import MainLayout from "../components/MainLayout.astro";
+import { Image } from "astro:assets";
+import serviceLanding from "../images/servicesLanding.png";
+import OurService from "../components/services/OurServices.astro";
+import FAQ from "../components/services/FAQ.astro";
 ---
 
 <MainLayout>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
-  <h1>Service Page</h1>
+  <div class="space-y-20">
+    <Image
+      class="w-full"
+      alt="Teenages playing basketball"
+      src={serviceLanding}
+    />
+    <OurService />
+    <FAQ />
+  </div>
 </MainLayout>
