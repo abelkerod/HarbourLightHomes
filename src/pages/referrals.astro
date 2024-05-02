@@ -1,7 +1,67 @@
 ---
+import { Image } from "astro:assets";
 import MainLayout from "../components/MainLayout.astro";
+import Container from "../components/Container.astro";
+import referralsLanding from "../images/referralsLanding.png";
 ---
 
 <MainLayout>
-  <h1>Referrals</h1>
+  <div class="space-y-20 bg-pattern">
+    <Image
+      class="w-full"
+      alt="Teenages celebrating a win"
+      src={referralsLanding}
+    />
+    <Container>
+      <div class="space-y-3 md:space-y-5">
+        <div class="md:flex">
+          <div class="space-y-3 md:space-y-5">
+            <h3 class="w-fit text-xl py-1 font-bold">
+              Referrals and Admissions
+            </h3>
+            <h3
+              class="text-2xl font-bold text-powder-blue md:w-5/6 md:text-3xl"
+            >
+              Referrals or admission requests are accepted from Local
+              Authorities. Upon receipt, our management team will conduct
+              thorough assessments to ensure suitability:
+            </h3>
+          </div>
+          <div class="space-y-3 md:space-y-5">
+            <p class="text-gun-metal-light md:text-xl text-justify">
+              We will evaluate the young person's needs and compile a
+              comprehensive Risk Assessment. We will also assess our company's
+              capacity, encompassing accommodation availability, staff
+              expertise, and experience to ensure the young person's needs can
+              be met adequately and safely. Lastly we will also assess the
+              suitability of locations.
+            </p>
+            <p class="text-gun-metal-light md:text-xl text-justify">
+              Upon admission, we guarantee accommodation meeting our Location
+              Assessment standards and assign trained staff members. Our
+              priority is ensuring the young person feels welcomed and safe,
+              with measures in place to facilitate their adjustment. Our
+              dedicated staff members introduce them to the local area, provide
+              necessary support, and foster a sense of belonging.
+            </p>
+            <p class="text-gun-metal-light md:text-xl text-justify">
+              In emergency admissions, our experienced team ensures efficient
+              handling to meet immediate needs while maintaining a safe
+              environment. Planned admissions involve thorough coordination with
+              professionals and tailored preparations to facilitate a smooth
+              transition.
+            </p>
+          </div>
+        </div>
+        <p class="text-gun-metal-light md:text-xl text-justify">
+          Each young person is welcomed with a warm reception, provided with a
+          homely environment, a dedicated support team, and access to essential
+          services and resources. Induction includes comprehensive guidance,
+          provision of personal items, area tours, and a personalization budget.
+          Our commitment to transparency and quality assurance ensures a
+          supportive and nurturing environment for all young people.
+        </p>
+      </div>
+    </Container>
+  </div>
 </MainLayout>
