@@ -1,5 +1,5 @@
 ---
-import logo from "../images/logo.png";
+import blueLogo from "../images/blueLlogo.png";
 import Image from "astro/components/Image.astro";
 import ContactUs from "../components/ContactUs.astro";
 ---
@@ -10,8 +10,8 @@ import ContactUs from "../components/ContactUs.astro";
   <div class="flex items-center justify-between px-8 py-2">
     <div class="md:space-y-2">
       <div class="md:flex items-center space-x-2 hidden">
-        <Image alt="logo" src={logo} class="size-16" loading={"lazy"} />
-        <h2>Harbour Light</h2>
+        <Image alt="logo" src={blueLogo} class="size-16" loading={"lazy"} />
+        <h2 class="font-bold">Harbour Light</h2>
       </div>
       <p>©{new Date().getFullYear()}. All Rights Reserved</p>
     </div>
