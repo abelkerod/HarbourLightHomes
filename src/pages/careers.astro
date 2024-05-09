@@ -1,7 +1,98 @@
 ---
 import MainLayout from "../components/MainLayout.astro";
+import Container from "../components/Container.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <MainLayout>
-  <h1>Careers</h1>
+  <Container>
+    <div class="bg-pattern flex flex-col items-center space-y-8 pt-28">
+      <h3 class="w-fit text-xl px-4 py-1 font-bold">Careers</h3>
+      <h1
+        class="text-3xl md:text-6xl sm:w-1/2 text-powder-blue leading-[4rem] text-center font-bold"
+      >
+        Career opportunities
+      </h1>
+      <h4
+        class="text-xl md:text-2xl px-4 md:w-[80%] text-center text-gun-metal-light"
+      >
+        Join Our Team and Make a Difference in the Lives of Young People.
+      </h4>
+    </div>
+
+    <div class="space-y-8 mt-8">
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2">
+          <Icon name="case" class="size-10" />
+          <h3 class="text-xl md:text-2xl font-medium text-gun-metal">
+            Placement Manager
+          </h3>
+        </div>
+        <p class="text-gun-metal-light md:text-xl text-justify font-semibold">
+          Join the Harbour Light Homes team and embark on a rewarding career
+          dedicated to making a meaningful difference in the lives of young
+          people.
+        </p>
+        <p class="text-gun-metal-light md:text-xl text-justify">
+          As a Placement Manager, you'll play a pivotal role in coordinating the
+          seamless integration of young people into our supported living
+          accommodations. With your exceptional organizational skills and
+          compassionate approach, you'll oversee the assessment of young
+          people's needs, collaborate with local authorities, and ensure the
+          provision of tailored support plans. Join us in creating a nurturing
+          environment where every young person feels valued, heard, and
+          supported on their journey towards independence.
+        </p>
+      </div>
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2">
+          <Icon name="case" class="size-10" />
+          <h3 class="text-xl md:text-2xl font-medium text-gun-metal">
+            Support Staff
+          </h3>
+        </div>
+        <p class="text-gun-metal-light md:text-xl text-justify font-semibold">
+          Become a vital part of our dedicated support staff and help empower
+          young people to overcome challenges and reach their full potential.
+        </p>
+        <p class="text-gun-metal-light md:text-xl text-justify">
+          As a member of our team, you'll provide invaluable guidance and
+          assistance to young people in various aspects of their daily lives,
+          from health and well-being to education, employment, and independent
+          living skills. With your empathy, patience, and commitment to positive
+          youth development, you'll serve as a role model and mentor, fostering
+          trusting relationships and inspiring confidence in those we support.
+        </p>
+      </div>
+      <div class="space-y-3">
+        <div class="flex items-center space-x-2">
+          <Icon name="case" class="size-10" />
+          <h3 class="text-xl md:text-2xl font-medium text-gun-metal">
+            Operational Staff
+          </h3>
+        </div>
+        <p class="text-gun-metal-light md:text-xl text-justify font-semibold">
+          Join our operational staff and contribute to the seamless functioning
+          of Harbour Light Homes' supported living accommodations.
+        </p>
+        <p class="text-gun-metal-light md:text-xl text-justify">
+          As an integral part of our team, you'll ensure the smooth operation of
+          our facilities, maintaining high standards of safety, security, and
+          cleanliness. With your attention to detail and proactive approach,
+          you'll play a key role in creating a welcoming and homely environment
+          where young people can thrive. Join us in making a difference and be
+          part of a team that is dedicated to providing young people with the
+          support they need to build brighter futures.
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-center my-8">
+      <h3 class="text-xl md:text-2xl font-medium text-gun-metal">
+        To apply please email <span
+          ><a href="#" class="text-powder-blue">test@gmail.com</a>
+          with you CV and Covering Letter.
+        </span>
+      </h3>
+    </div>
+  </Container>
 </MainLayout>
