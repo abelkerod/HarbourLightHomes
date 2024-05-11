@@ -1,6 +1,7 @@
 ---
 import logo from "../images/logo.png";
 import { Image } from "astro:assets";
+console.log(Astro.url.pathname);
 ---
 
 <nav
@@ -68,7 +69,7 @@ import { Image } from "astro:assets";
         <li>
           <a
             href="/services"
-            class={`${Astro.url.pathname === "/services" ? "block rounded p-3 md:p-0 text-powder-blue font-semibold" : "block rounded p-3 md:p-0 "}`}
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/services" ? "text-powder-blue font-semibold" : ""}`}
             aria-current="page">Services</a
           >
         </li>
