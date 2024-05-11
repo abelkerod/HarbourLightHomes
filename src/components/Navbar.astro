@@ -69,7 +69,9 @@ console.log(Astro.url.pathname);
         <li>
           <a
             href="/services"
-            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/services" ? "text-powder-blue font-semibold" : ""}`}
+            class={Astro.url.pathname === "/services"
+              ? "block rounded p-3 md:p-0 text-powder-blue font-semibold"
+              : "block rounded p-3 md:p-0"}
             aria-current="page">Services</a
           >
         </li>
