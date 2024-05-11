@@ -69,23 +69,21 @@ console.log(Astro.url.pathname);
         <li>
           <a
             href="/services"
-            class={Astro.url.pathname.split("/")[1] === "services"
-              ? "block rounded p-3 md:p-0 text-powder-blue font-semibold"
-              : "block rounded p-3 md:p-0"}
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname.split("/")[1] === "services" ? "text-powder-blue font-semibold" : ""}`}
             aria-current="page">Services</a
           >
         </li>
         <li>
           <a
             href="/referrals"
-            class={`${Astro.url.pathname === "/referrals" ? "block rounded p-3 md:p-0 text-powder-blue font-semibold" : "block rounded p-3 md:p-0 "}`}
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname.split("/")[1] === "referrals" ? "text-powder-blue font-semibold" : ""}`}
             aria-current="page">Referrals</a
           >
         </li>
         <li>
           <a
             href="/careers"
-            class={`${Astro.url.pathname === "/careers" ? "block rounded p-3 md:p-0 text-powder-blue font-semibold" : "block rounded p-3 md:p-0 "}`}
+            class={`block rounded p-3 md:p-0 ${Astro.url.pathname.split("/")[1] === "careers" ? "text-powder-blue font-semibold" : ""}`}
             aria-current="page">Careers</a
           >
         </li>
