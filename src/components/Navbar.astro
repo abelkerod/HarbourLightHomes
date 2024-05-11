@@ -68,21 +68,21 @@ import { Image } from "astro:assets";
         <li>
           <a
             href="/services"
-            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/services" ? "text-powder-blue font-semibold" : ""}`}
+            class={`${Astro.url.pathname === "/services" ? "block rounded p-3 md:p-0 text-powder-blue font-semibold" : "block rounded p-3 md:p-0 "}`}
             aria-current="page">Services</a
           >
         </li>
         <li>
           <a
             href="/referrals"
-            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/referrals" ? "text-powder-blue font-semibold" : ""}`}
+            class={`${Astro.url.pathname === "/referrals" ? "block rounded p-3 md:p-0 text-powder-blue font-semibold" : "block rounded p-3 md:p-0 "}`}
             aria-current="page">Referrals</a
           >
         </li>
         <li>
           <a
             href="/careers"
-            class={`block rounded p-3 md:p-0 ${Astro.url.pathname === "/careers" ? "text-powder-blue font-semibold" : ""}`}
+            class={`${Astro.url.pathname === "/careers" ? "block rounded p-3 md:p-0 text-powder-blue font-semibold" : "block rounded p-3 md:p-0 "}`}
             aria-current="page">Careers</a
           >
         </li>
